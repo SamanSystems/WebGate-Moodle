@@ -1,0 +1,13 @@
+<div align="center">
+<p><?php print_string("paymentrequired") ?></p>
+<p><b><?php echo $instancename; ?></b></p>
+<p><b><?php echo get_string("cost").": {$instance->currency} {$localisedcost}"; ?></b></p>
+<p><img alt="<?php print_string('zarinpalaccepted', 'enrol_zarinpal') ?>" src="https://ir.zarinpal.com/favicon.ico" /></p>
+<p><?php print_string("paymentinstant") ?></p>
+<form action="<?php echo $ZPURL; echo'/'; echo $ZPAU; ?>" method="post">
+
+  <input type="submit" value="<?php print_string("sendpaymentbutton", "enrol_zarinpal") ?>" />
+
+</form>
+
+</div>
