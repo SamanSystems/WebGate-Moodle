@@ -10,7 +10,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 defined('MOODLE_INTERNAL') || die();
-define('zarinpal_OFFLINE', 'https://www.zarinpal.com/pg/StartPay/');
+define('zarinpal_OFFLINE', 'https://www.zarinpal.com/pg/StartPay');
 define('zarinpal_SERVICE', 'https://de.zarinpal.com/pg/services/WebGate/wsdl');
 
 /**
@@ -223,7 +223,7 @@ class enrol_zarinpal_plugin extends enrol_plugin {
 		//Redirect to URL You can do it also by creating a form
 		if($result->Status == 100)
 		{
-      $ZPURL = 'https://www.zarinpal.com/pg/StartPay/';
+      $ZPURL = 'https://www.zarinpal.com/pg/StartPay';
       $ZPAU  = $result->Authority;
 		//	Header('Location: https://www.zarinpal.com/pg/StartPay/'.$result->Authority);
 			//exit;
